@@ -9,7 +9,7 @@ slam_node:
     kiss_slam:
       local_mapper:
           voxel_size: 0.2
-          splitting_distance: 5.0
+          splitting_distance: 1.5
 
       occupancy_mapper:
           free_threshold: 0.5
@@ -29,7 +29,7 @@ slam_node:
               density_threshold: 0.05
               hamming_distance_threshold: 50
               inliers_threshold: 5
-          overlap_threshold: 0.4
+          overlap_threshold: 0.3
 
       pose_graph_optimizer:
           max_iterations: 10
